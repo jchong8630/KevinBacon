@@ -20,6 +20,18 @@ public class SimpleMovie {
         return actors;
     }
 
+    public String getActorsStr() {
+        String str = "";
+        for (int i = 0; i < actors.size(); i++){
+            str += actors.get(i) + ":";
+        }
+        return str;
+    }
+
+    public String getTitle(){
+        return title;
+    }
+
     public String toString() {
         return "Title: " + title + "\n" + "Actors: " + actors + "\n";
     }
