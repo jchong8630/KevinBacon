@@ -35,11 +35,12 @@ public class MovieDatabaseBuilder {
         ArrayList<String> actors = new ArrayList<String>();
         while (s.hasNext()){
             String actor = s.nextLine();
-            actors.add(actor.toLowerCase());
+            actors.add(actor);
         }
         s.close();
         return actors;
     }
+
 
 
 

@@ -13,14 +13,16 @@ public class Main {
 //        }
 //        System.out.println("Number of movies: " + movies.size());
         ArrayList<String> kbActors = MovieDatabaseBuilder.getActors("src/ActorNames");
-        ArrayList<SimpleMovie> kbActorsMovies = new ArrayList<>();
-        for (int i = 0; i < movies.size(); i++){
-            for (int j = 0; j < kbActors.size(); j++){
-                if (movies.get(i).getActors().contains(kbActors.get(j))){
-                        kbActorsMovies.add(movies.get(i));
-                }
-            }
-        }
+        ArrayList<SimpleMovie> kbActorsMovies = MovieDatabaseBuilder.getMovieDB("src/kbActorMovies");
+//        for (int i = 0; i < movies.size(); i++){
+//            ArrayList<String> cast = movies.get(i).getActors();
+//            for (int j = 0; j < kbActors.size(); j++){;
+//                if (cast.contains(kbActors.get(j))){
+//                        kbActorsMovies.add(movies.get(i));
+//                        break;
+//                }
+//            }
+//        }
         System.out.println(kbActorsMovies);
         Scanner s = new Scanner(System.in);
         System.out.println("Enter an actor's name: ");
