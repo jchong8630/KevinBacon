@@ -16,12 +16,8 @@ public class Main {
         ArrayList<SimpleMovie> actorMoviesActorsMovies = new ArrayList<>();
         Scanner s = new Scanner(System.in);
         String actor = "";
-        while(!(actor.equals("q"))){
             System.out.print("Enter an actor's name or (q) to quit: ");
             actor = s.nextLine();
-            if (actor.equals("q")){
-                break;
-            }
 
             for (SimpleMovie value : movies) {
                 if (value.getActors().contains(actor)) {
@@ -162,6 +158,5 @@ public class Main {
                     }
                 }
             }
-        }
     }
 }
