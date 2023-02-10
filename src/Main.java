@@ -16,7 +16,7 @@ public class Main {
         ArrayList<SimpleMovie> actorMoviesActorsMovies = new ArrayList<>();
         Scanner s = new Scanner(System.in);
         String actor = "";
-            System.out.print("Enter an actor's name or (q) to quit: ");
+            System.out.print("Enter an actor's name: ");
             actor = s.nextLine();
 
             for (SimpleMovie value : movies) {
